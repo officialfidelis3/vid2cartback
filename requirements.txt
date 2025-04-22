@@ -1,6 +1,5 @@
 Flask
-flask-cors
 opencv-python
-moviepy
 Pillow
-moviepy
+flask-cors==3.1.1
+moviepy==1.0.3
