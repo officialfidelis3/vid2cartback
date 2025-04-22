@@ -24,5 +24,6 @@ def upload():
 def result(filename):
     return send_file(os.path.join(RESULT_FOLDER, filename), as_attachment=True)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))  # Render provides the PORT environment variable
+    app.run(host="0.0.0.0", port=port)
